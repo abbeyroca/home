@@ -30,20 +30,20 @@ body{
 
 .wrapper {
     overflow-y: hidden;
+    display: grid;
+    grid-row: 5;
 }
 
 .homebg {
-    object-fit: cover;
-    float: left;
+    height: 50vh;
     min-width: 1px;
 }
 
 .home {
     position: fixed;
-    display: grid;
     width: 100vw;
     text-align: center;
-    grid-row: 10;
+
     padding: 0px;
     margin: 0px;
     align-content: space-around;
@@ -58,13 +58,16 @@ grid-container {
     font-family: 'Courier New', Courier, monospace;
     color: red;
     margin: 0px;
+    font-weight: bold;
+    font-size: 10vh;
     grid-column: 1 / span 8;
+    text-align: center;
 }
 
-.caption {
+.calendar {
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 10vh;
     margin: 0px;

@@ -1,50 +1,31 @@
-const abbeyRocaAddress = "https://maps.app.goo.gl/HheCenUsziWJ5nMw5";
-const sheetId = '1jvMHBSXOZhzuDwNmXMuepNAhK95vi3f193c0Z_FWmls';
-const base = `https://docs.google.com/spreadsheets/d/${sheetId}/?`;
-const sheetName = 'Espaço Cultural Abbey Roça';
-const query = encodeURIComponent("Select A, B, D, E")
-const url = `${base}&sheet=${sheetName}&tq=${query}`
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
 
-const data = []
-document.addEventListener('DOMContentLoaded', init)
-const output = document.querySelector('.output')
-function init() {
-  fetch(url)
-  .then(res => res.text())
-  .then(rep => {
-            //Apaga textos adicionais e extrai so o JSON:
-            const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            const colz = [];
-            const tr = document.createElement('tr');
-            //Extrai nome das colunas
-            jsonData.table.cols.forEach((heading) => {
-              let column = heading.label;
-                colz.push(column);
-                  const th = document.createElement('th');
-                  tr.appendChild(th);
-
-                })
-            //Extrai dados das linhas
-            jsonData.table.rows.forEach((rowData) => {
-                const row = {};
-                colz.forEach((ele, ind) => {
-                    row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
-                  })
-                data.push(row);
-              })
-              processRows(data);
-            })
+today = mm + '/' + dd + '/' + yyyy;
+var now = new Date();
+var events = {
+    "Abbey Indie Fest": {
+        data: "11/05/2024",
+        descricao: "Abbey Indie Fest"
+    },
+    "Arraiabbey": {
+        data: "08/06/2024",
+        descricao: "Arraiabbey"
+    },
+    "Evento 2": {
+        data: "20/07/2024",
+        descricao: "Evento 2"
+    },
 }
 
-function processRows(json) {
-  var total = 0.0
-  json.forEach((row) => {
-    const tr = document.createElement('tr');
-        const keys = Object.keys(row);
 
-        keys.forEach((key) => {
-            console.log(key)
-        })
-      })
-      
-    }
+
+for (e in events) {
+    console.log(e)
+    const para = document.createElement("p");
+    para.innerText = e["data"] + " " + e;
+    var el = document.getElementById("calendar") 
+    el.appendChild(para);
+}

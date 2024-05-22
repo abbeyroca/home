@@ -17,6 +17,35 @@
             <img class="logo" src="./imgs/logo.jpeg">
         </div>
     </div>
-    <script type="module" src="./js/calendar.js"></script>
+    <script type="text/javascript" >
+        function eventos() {
+
+            return new Object({
+                'Abbey Indie Fest': {
+                    data: '11/05/2024',
+                    descricao: 'Abbey Indie Fest'
+                },
+                'Arraiabbey': {
+                    data: '08/06/2024',
+                    descricao: 'Arraiabbey'
+                },
+                'Evento 2': {
+                    data: '20/07/2024',
+                    descricao: 'Evento 2'
+                },
+            })
+        }
+
+        function updateCalendar() {
+        for (const [key, value] of Object.entries(eventos())) {
+            console.log(key, value);
+            const para = document.createElement("p");
+            para.innerText = value['data'] + " " + key;
+            var el = document.getElementById("calendar") 
+            el.appendChild(para);
+            }
+        }
+        updateCalendar()
+    </script>
 </body>
 </html>

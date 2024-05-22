@@ -4,7 +4,7 @@
     }
     
     .calendar {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 }
 @media only screen and (min-width: 851px) {
@@ -13,7 +13,7 @@
     }
     
     .calendar {
-        font-size: 5vh;
+        font-size: 3vh;
     }
 }
 
@@ -64,5 +64,5 @@ body {
     font-weight: bold;
     margin: 0px;
     grid-column: 1 / span 8;
-    font-size: 12vh;
+    font-size: 5vh;
 }

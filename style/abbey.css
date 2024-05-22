@@ -1,19 +1,18 @@
 @media only screen and (max-width: 850px) {
     .title {
-        height: 6vh;
-        font-size: 3.5vh;
+        font-size: 5vh;
     }
-    .text {
-        font-size: 1.9vh;
+    
+    .calendar {
+        font-size: 3vh;
     }
-}
 @media only screen and (min-width: 851px) {
     .title {
-        font-size: 10vh;
-        height: 20vh;
+        font-size: 12vh;
     }
-    .text {
-        font-size: 2.5vh;
+    
+    .calendar {
+        font-size: 5vh;
     }
 }
 
@@ -48,7 +47,6 @@ body{
     color: red;
     margin: 0px;
     font-weight: bold;
-    font-size: 12vh;
     grid-column: 1 / span 8;
     text-align: center;
 }
@@ -58,7 +56,6 @@ body{
     color: black;
     text-align: left;
     font-weight: bold;
-    font-size: 5vh;
     margin: 0px;
     grid-column: 1 / span 8;
 }

@@ -1,11 +1,12 @@
 @media only screen and (max-width: 850px) {
     .title {
-        font-size: 5vh;
+        font-size: 4vh;
     }
     
     .calendar {
         font-size: 3vh;
     }
+}
 @media only screen and (min-width: 851px) {
     .title {
         font-size: 12vh;
@@ -16,9 +17,14 @@
     }
 }
 
-body{
+body {
     padding: 0;
 }
+
+@font-face {
+    font-family: momot;
+    src: url(Momоt___.ttf);
+  }
 
 .column {
     display: grid;
@@ -27,19 +33,18 @@ body{
     justify-content: center;  
 }
 
+
 .logo {
     width: 35vw;
     text-align: center;
 }
 
 .logo-container {
-    grid-column: 3 / span 4;
+    grid-column: 3 / span 2;
 }
 
-.column {
-    display: grid;
-    margin: 0px;
-    gap: 0px;
+.regua {
+    grid-column: 1 / span 8;
 }
 
 .title {
@@ -49,6 +54,7 @@ body{
     font-weight: bold;
     grid-column: 1 / span 8;
     text-align: center;
+    font-size: 12vh;
 }
 
 .calendar {
@@ -58,9 +64,5 @@ body{
     font-weight: bold;
     margin: 0px;
     grid-column: 1 / span 8;
+    font-size: 12vh;
 }
-
-@font-face {
-    font-family: momot;
-    src: url(Momоt___.ttf);
-  }

@@ -6,9 +6,6 @@
     .text {
         font-size: 1.9vh;
     }
-    .littleday {
-        font-size: 1.5vh;   
-    }
 }
 @media only screen and (min-width: 851px) {
     .title {
@@ -18,116 +15,56 @@
     .text {
         font-size: 2.5vh;
     }
-    .littleday {
-        font-size: 3vh;
-    }
 }
 
 body{
-    margin: 0px;
     padding: 0;
 }
 
-.wrapper {
-    overflow-y: hidden;
+.column {
     display: grid;
-    grid-row: 5;
+    grid-column: 1;
+    width: 100%;
+    justify-content: center;  
 }
 
-.homebg {
-    height: 50vh;
-    min-width: 1px;
-}
-
-.home {
-    position: fixed;
-    width: 100vw;
+.logo {
+    width: 35vw;
     text-align: center;
-
-    padding: 0px;
-    margin: 0px;
-    align-content: space-around;
 }
 
-grid-container {
+.logo-container {
+    grid-column: 3 / span 4;
+}
+
+.column {
+    display: grid;
     margin: 0px;
     gap: 0px;
 }
 
 .title {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: momot;
     color: red;
     margin: 0px;
     font-weight: bold;
-    font-size: 10vh;
+    font-size: 12vh;
     grid-column: 1 / span 8;
     text-align: center;
 }
 
 .calendar {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: momot;
     color: black;
     text-align: left;
     font-weight: bold;
-    font-size: 10vh;
+    font-size: 5vh;
     margin: 0px;
     grid-column: 1 / span 8;
 }
 
-.text {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: white;
-    grid-column: 1 / span 8;
-    width: 94vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-bottom: 10vw;
-}
 
-
-a {
-    color: red;
-    font-weight: bold;
-    font-size: 5vh;
-}
-
-.homebutton {
-    font-family: basteleurBold;
-    text-align: center;
-    color: black;
-    grid-column: 1 / span 8;
-}
-
-.contribution {
-    font-family: basteleurBold;
-    color: red;
-    grid-column: 1 / span 8;
-}
-
-table {
-    font-family: basteleurBold;
-    border-collapse: collapse;
-    width: 100%;
-    grid-column: 1 / span 8;
-}
-  
-table td, table th {
-    border: 0px;
-    padding: 0px;
-}
-
-table tr:nth-child(even){background-color: #f2f2f2;}
-table tr:hover {background-color: yellowgreen;}
-
-table th {
-    text-align: left;
-    background-color: transparent;
-    color: black;
-}
-
-
-
-.forms-table {
-    grid-column: 1 / span 8;
-}
+@font-face {
+    font-family: momot;
+    src: url(Momоt___.ttf);
+  }

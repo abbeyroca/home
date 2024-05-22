@@ -63,10 +63,7 @@ body{
     grid-column: 1 / span 8;
 }
 
-
 @font-face {
     font-family: momot;
     src: url(Momоt___.ttf);
   }
-
-

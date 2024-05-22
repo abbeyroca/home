@@ -20,12 +20,10 @@ var events = {
     },
 }
 
-
-
-for (e in events) {
-    console.log(e)
+for (const [key, value] of Object.entries(events)) {
+    console.log(key, value);
     const para = document.createElement("p");
-    para.innerText = e["data"] + " " + e;
+    para.innerText = value["data"] + " " + key;
     var el = document.getElementById("calendar") 
     el.appendChild(para);
-}
+  }

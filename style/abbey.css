@@ -35,7 +35,7 @@ body {
     font-weight: bold;
     grid-column: 1 / span 8;
     text-align: center;
-    font-size: 12vw;
+    font-size: 10vw;
 }
 
 .calendar {
@@ -45,5 +45,5 @@ body {
     font-weight: bold;
     margin: 0px;
     grid-column: 1 / span 8;
-    font-size: 5vw;
+    font-size: 4vw;
 }

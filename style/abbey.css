@@ -3,8 +3,8 @@ body {
 }
 
 @font-face {
-    font-family: momot;
-    src: url(Momоt___.ttf);
+    font-family: orange;
+    src: url(Orange\ Typewriter.ttf);
   }
 
 .column {
@@ -29,7 +29,7 @@ body {
 }
 
 .title {
-    font-family: momot;
+    font-family: orange;
     color: red;
     margin: 0px;
     font-weight: bold;
@@ -39,7 +39,7 @@ body {
 }
 
 .calendar {
-    font-family: momot;
+    font-family: orange;
     color: black;
     text-align: left;
     font-weight: bold;
